@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+    <title>Restaurant</title>
+    <style type="text/css">
+        /* Set the size of the div element that contains the map */
+        
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 70%;
+            margin: 100px;
+            /* The width is the width of the web page */
+        }
+    </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <div class="landing-page">
+        <!-- Navigation Bar Starts -->
+        <div class="nav-bar">
+            <span class="Restaurant"> 
+                <a>Restaurant </a>
+            </span>
+
+            <span class="title_nav_items" style="color: black;">
+                <ul>
+                    <li><a href="#delivery" > Delivery</a></li>
+                    <li><a href="#menu"> Menu</a></li>
+                    <li><a href="#"> About Us</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                </ul>
+            </span>
+
+            <span class="nav-icons">
+                <ul>
+                    <li><a href="#"><img src="wishlist.png" width="25px" height="25px" alt="Add to favorite"></a></li>
+                    <li><a href="#"><img src="shopping-cart.png" width="25px" height="25px" alt="Shopping cart"> </a></li>
+                    <li><a href="#"><img src="man.png" width="25px" height="25px" alt="Profile image"></a></li>
+                </ul>
+            </span>
+
+        </div>
+
+        <!-- Navigation Bar Ends -->
+
+        <br>
+        <!-- Container 1 Starts -->
+
+        <div class="container-1">
+            <div class="row">
+                <div class="column1">
+                    <span class="Penne-Pasta-with-Soyaballs">
+                        Penne Pasta <br>
+                        with Soyaballs
+                      </span>
+                    <br>
+                    <span class="Penne-Pasta-with-Soyaballs-in-our-restaurant-at-a-special-price-">
+                        Penne Pasta with Soyaballs <br>
+                      in our restaurant at a <br>
+                      special
+                      <span class="price">price :</span>
+                    </span>
+                    <br>
+                    <br>
+                    <span class="price-1">
+                        ₹ 380
+                      </span>
+                    <br>
+                    <br>
+                    <span class="price-2">
+                        ₹ 260
+                       
+                    <span class="buttons">
+                            <button class="add_to_cart">  + Add to Cart</button>
+                            <button class="buy_now"><img src="button_cart.png" height="20px" width="20px"> Buy Now</button>
+                            </span>
+                    </span>
+                    <br>
+
+                </div>
+                <div class="column2">
+                    <div class="side_bar_scroll">
+                        <img class="sidebar_images" src="Mask Group 6.png">
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+        </div>
+        <br>
+
+        <!-- Container 1 Ends -->
+
+        <!-- Container 2 Starts -->
+        <div id="delivery" class="container-2">
+            <h2 style="font-weight: 1000;">Delivery</h2>
+            <br>
+            <div class="del_cont">
+                <div class="card_white">
+
+                    <img src="bag.png" width="50px" height="50px">
+                    <h3>Order</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, tenetur dolorem possimus a doloremque nostrum quam quo, laudantium iusto aliquam voluptatibus voluptates corrupti placeat sequi quas nemo porro quaerat!</p>
+                </div>
+                <div class="card_white">
+                    <img src="credit-card.png" width="50px" height="50px">
+                    <h3>Payment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, tenetur dolorem possimus a doloremque nostrum quam quo, laudantium iusto aliquam voluptatibus voluptates corrupti placeat sequi quas nemo porro quaerat!</p>
+                </div>
+                <div class="card_black">
+                    <img src="cargo-truck.png" width="50px" height="50px">
+                    <h3>Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, tenetur dolorem possimus a doloremque nostrum quam quo, laudantium iusto aliquam voluptatibus voluptates corrupti placeat sequi quas nemo porro quaerat!</p>
+
+                </div>
+                <div class="card_white">
+                    <img src="package.png" width="50px" height="50px">
+                    <h3>Packaging</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptas, tenetur dolorem possimus a doloremque nostrum quam quo, laudantium iusto aliquam voluptatibus voluptates corrupti placeat sequi quas nemo porro quaerat!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Container 2 Ends -->
+
+    <!-- Menu Container Starts -->
+
+    <!-- <span class="menu_item">  <a href="/index.html"  >Pasta</a></span>
+        <span class="menu_item">  <a href="/Salad.html">Salad</a></span>
+        <span class="menu_item">  <a href="/Grill.html" >Grill</a></span>
+        <span class="menu_item">  <a href="/Cake.html" >Cake</a></span> -->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="Menu"><a href="#Plz">Menu</a></li>
+            <li class="active"><a href="#Pasta">Pasta</a></li>
+            <li><a href="#Salad">Salad</a></li>
+            <li><a href="#Grill">Grill</a></li>
+            <li><a href="#Cake">Cake</a></li>
+        </ul>
+
+        <p style=" color: black;  font-size: larger   ; font-weight: bold;"> Plz Select your desire dish category to view the available dishes. </p>
+
+        <div class="tab-content">
+
+
+
+            <div id="Pasta" class="tab-pane fade in active">
+                <h3>Pasta</h3>
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="penne-pasta-with-meatballs-tomato-sauce-white-bowl_2829-7663.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Penne Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="appetizing-healthy-rice-with-vegetables-white-plate-wooden-table.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Rice Bowl</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Broccli Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="istockphoto-632439546-612x612.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Long Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="penne-pasta-with-meatballs-tomato-sauce-white-bowl_2829-7663.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Penne Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="appetizing-healthy-rice-with-vegetables-white-plate-wooden-table.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Rice Bowl</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Broccli Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="istockphoto-632439546-612x612.png" class="pasta_images" width="50px" height="50px">
+                        <h3>Long Pasta</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="Salad" class="tab-pane fade">
+                <h3>Salad</h3>
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Olivier Salad.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Olivier Salad</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Greek Salad.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Greek Salad</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Tabbouleh.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Tabbouleh</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Cobb Salad.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Cobb Salad</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Caesar-salad.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Caesar Salad</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Salad Nicoise.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Salad Nicoise</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Salad Caprese.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Salad Caprese </h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Larb Salad.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Larb Salad </h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="Grill" class="tab-pane fade">
+                <h3>Grill</h3>
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Grilled chicken.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Chicken</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Grilled Fish.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Fish</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Grilled Sandwich.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Sandwich</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Grilled Cheese.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Cheese</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Grilled Corn.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Corn</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Grilled Sausage.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Sausage</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Grilled Panner.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Panner </h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Grilled Vegetable.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Grilled Vegetable</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div id="Cake" class="tab-pane fade">
+                <h3>Cake</h3>
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Berry cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Berry Cake</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Biscoff Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Biscoff Cake</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Cheese Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3> Cheese Cake</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+                    <div class="pasta_card">
+                        <img src="Fruit Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Fruit Cake</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+                <div class="menu_card">
+                    <div class="pasta_card">
+
+                        <img src="Chocolate Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Chocolate Cake</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price"> ₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Vanilla Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Vanilla Cake</h3>
+                        <span class="rating">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Rainbow Cake.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Rainbow Cake </h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 180</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+
+                    <div class="pasta_card">
+                        <img src="Cup Cakes.jpg" class="pasta_images" width="50px" height="50px">
+                        <h3>Cup Cakes</h3>
+                        <span class="rating">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                        <span class="price">₹ 260</span>
+                        <p>lorens udc kiscamc suuunsd acdsdc saasaf cadfd.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".nav-tabs a").click(function() {
+                $(this).tab('show');
+            });
+        });
+    </script>
+
+
+    <br>
+    <br>
+
+
+    <!-- Menu Container Ends -->
+
+    <br>
+
+    <br>
+
+    <!-- Review Continer Starts -->
+    <div class="container-4">
+        <h3 style="font-weight: 1000;">Reviews</h3>
+        <div class="scroll">
+            <div class="review_box">
+                <img src="man.png" width="60px" height="60px">
+                <div class="review_profile_name">
+                    <h3>Ariana Resto</h3>
+                    <h4>lorem ipsum</h4>
+                </div>
+
+
+                <span class=review_social_media>
+            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+
+            </span>
+                <br>
+                <p class="review_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit luctus, tristique justo vitae, ornare dolor. Nunc varius, ante faucibus placerat semper, eros arcu posuere eros, eu molestie enim mauris quis turpis. Nunc a quam
+                    elit. Donec rhoncus id erat a ultricies. Quisque dignissim ex vitae turpis aliquam euismod. Duis elit quam, egestas eu libero eu, semper posuere ipsum. Donec ullamcorper, metus in semper vehicula, mauris turpis euismod sapien, vel
+                    scelerisque dolor erat non ante. Curabitur pulvinar erat et turpis placerat iaculis. </p>
+            </div>
+
+            <div class="review_box">
+                <img src="man.png" width="60px" height="60px">
+                <div class="review_profile_name">
+                    <h3>Ariana Resto</h3>
+                    <h4>lorem ipsum</h4>
+                </div>
+
+
+                <span class=review_social_media>
+            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+
+            </span>
+                <br>
+                <p class="review_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit luctus, tristique justo vitae, ornare dolor. Nunc varius, ante faucibus placerat semper, eros arcu posuere eros, eu molestie enim mauris quis turpis. Nunc a quam
+                    elit. Donec rhoncus id erat a ultricies. Quisque dignissim ex vitae turpis aliquam euismod. Duis elit quam, egestas eu libero eu, semper posuere ipsum. Donec ullamcorper, metus in semper vehicula, mauris turpis euismod sapien, vel
+                    scelerisque dolor erat non ante. Curabitur pulvinar erat et turpis placerat iaculis. </p>
+            </div>
+
+            <div class="review_box">
+                <img src="man.png" width="60px" height="60px">
+                <div class="review_profile_name">
+                    <h3>Ariana Resto</h3>
+                    <h4>lorem ipsum</h4>
+                </div>
+
+
+                <span class=review_social_media>
+            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+
+            </span>
+                <br>
+                <p class="review_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit luctus, tristique justo vitae, ornare dolor. Nunc varius, ante faucibus placerat semper, eros arcu posuere eros, eu molestie enim mauris quis turpis. Nunc a quam
+                    elit. Donec rhoncus id erat a ultricies. Quisque dignissim ex vitae turpis aliquam euismod. Duis elit quam, egestas eu libero eu, semper posuere ipsum. Donec ullamcorper, metus in semper vehicula, mauris turpis euismod sapien, vel
+                    scelerisque dolor erat non ante. Curabitur pulvinar erat et turpis placerat iaculis. </p>
+            </div>
+
+            <div class="review_box">
+                <img src="man.png" width="60px" height="60px">
+                <div class="review_profile_name">
+                    <h3>Ariana Resto</h3>
+                    <h4>lorem ipsum</h4>
+                </div>
+
+
+                <span class=review_social_media>
+            <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+
+            </span>
+                <br>
+                <p class="review_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim velit luctus, tristique justo vitae, ornare dolor. Nunc varius, ante faucibus placerat semper, eros arcu posuere eros, eu molestie enim mauris quis turpis. Nunc a quam
+                    elit. Donec rhoncus id erat a ultricies. Quisque dignissim ex vitae turpis aliquam euismod. Duis elit quam, egestas eu libero eu, semper posuere ipsum. Donec ullamcorper, metus in semper vehicula, mauris turpis euismod sapien, vel
+                    scelerisque dolor erat non ante. Curabitur pulvinar erat et turpis placerat iaculis. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Review Container Ends -->
+    <br>
+
+
+    <!-- Geolocation Container Starts -->
+    <div class="container-5">
+        <div id="map"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
+    </div>
+    <!-- Geolocation Container Ends -->
+
+    <!-- Form Container Starts -->
+    <div id="contact" class="container-6">
+        <div class="row_form">
+            <div class="col_form">
+                <form class="form_side_right">
+                    <label class="form_font_right">Enter your name:</label><br>
+                    <input type="text"><br>
+                    <br>
+                    <label class="form_font_right">Your phone number:</label>
+                    <br>
+                    <input type="text "><br> <br>
+
+                    <label class="form_font_right">Enter your message:</label><br>
+                    <input type="text" style="height: 170px;"><br>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="col_form">
+
+            <h2 class="form_contact_label" style="font-weight: 1000;  font-size: 40px;">Contacts</h2>
+            <hr>
+            <br>
+            <h3 class="form_label">Contact us in a convenient way:</h3>
+            <br>
+            <h3 class="form_label"> Phone:</h3>
+            <h3>+91 62575 84925 <br> +91 82465 98625</h3>
+            <br>
+            <h3 class="form_label">Email:</h3>
+            <h3>xyzrestaurant@gmail.com</h3>
+
+            <br>
+            <input class="learn_more" type="button" value="Learn More">
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- Form Container Ends -->
+
+    <!-- Footer Container Starts -->
+
+    <div id="footer" class="container-7">
+        <hr>
+        <div class="footer_row">
+            <div class="footer_cols">
+                <h2> About Us</h2>
+                <ul>
+                    <li><a href="pasta_sibebar-removebg-preview.png"> Price</a></li>
+
+                    <li><a href="#Menu"> Menu </a></li>
+
+                    <li><a href="index.html"> Main page </a></li>
+
+                </ul>
+            </div>
+            <div class="footer_cols">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#Menul">Packaging</a></li>
+                    <li> <a href="#delivery">Delivery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_cols">
+                <h2> Schedule</h2>
+                <ul>
+                    <li>Mn-fr: </li>
+                    <li>09:00 am - 07:00 pm</li>
+                </ul>
+            </div>
+            <div class="footer_cols">
+                <span class="social_media_icons">
+                    <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+        
+                    </span>
+            </div>
+
+        </div>
+
+
+        <!-- Footer Container Ends -->
+    </div>
+
+
+</body>
+
+</html>
